@@ -1,0 +1,77 @@
+.heroes {
+  background: $color-hefu;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.overlay {
+  background: no-repeat;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/Решения.jpg);
+}
+
+.hero {
+  text-align: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 696px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.hero__countainer {
+  text-align: center;
+  width: 696px;
+}
+
+.hero__text {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: $color-white;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+}
+
+.hero__button {
+  text-decoration: none;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  outline: none;
+  display: inline-block;
+  min-width: 200px;
+
+  color: $color-white;
+  background: $color-click;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $color-click;
+    background: $color-white;
+  }
+}
